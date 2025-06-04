@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #d5dfeb;
+    font-size: 1.6rem;
+}
+
+.sidebarWrapper {
+    width: 19%;
+    flex: 0 0 19%;
+    transition: all 0.3s ease-in-out;
+}
+
+.content {
+    flex: 0 0 82%;
+    transition: all 0.3s;
+    width: 82%;
+}
+.right-content {
+    padding: 90px 30px 10px;    
+}
+.custom-menu .ant-menu-item,
+.custom-menu .ant-menu-submenu-title {
+  font-size: 14px !important; /* Tăng cỡ chữ cho các mục chính */
+  height: 50px !important; /* Tăng chiều cao của mục */
+  line-height: 50px !important; /* Căn giữa chữ theo chiều dọc */
+}
+
+.custom-menu .ant-menu-item a,
+.custom-menu .ant-menu-submenu-title span {
+  font-weight: 500; /* Làm chữ đậm hơn một chút */
+}
+
+/* Tùy chỉnh cỡ chữ cho các mục con trong SubMenu */
+.custom-menu .ant-menu-sub .ant-menu-item {
+  font-size: 13px !important; /* Tăng cỡ chữ cho các mục con */
+  height: 40px !important;
+  line-height: 45px !important;
+}
+
+/* Tùy chỉnh khoảng cách giữa icon và chữ */
+.custom-menu .ant-menu-item .anticon,
+.custom-menu .ant-menu-submenu-title .anticon {
+  margin-right: 10px !important; /* Tăng khoảng cách giữa icon và chữ */
+}
+.custom-menu .ant-menu-item a,
+.custom-menu .ant-menu-submenu-title a {
+  text-decoration: none !important; /* Xóa dấu gạch chân */
+}
+
+/* Đảm bảo không có dấu gạch chân khi hover */
+.custom-menu .ant-menu-item a:hover,
+.custom-menu .ant-menu-submenu-title a:hover {
+  text-decoration: none !important;
+}
+
+.ant-message {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  right: 0;
+  z-index: 1010; /* đảm bảo nằm trên các layout khác */
+  pointer-events: none;
+}
+
+.ant-message-notice {
+  pointer-events: all;
+}
+.ant-message {
+  z-index: 9999 !important;
+  top: 80px !important;
+}

@@ -1,0 +1,49 @@
+/* src/components/InfoCard/infocard.css    */
+
+.info-card {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #fff;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.info-card-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.info-card-icon {
+  font-size: 3rem !important;
+   /* Tăng kích thước icon */;
+   /* Tăng kích thước icon */
+}
+
+.info-card-text {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.info-card-title {
+  font-weight: bold !important;
+  text-transform: uppercase;
+  color: #121212;
+  font-size: 1.7rem !important; /* Tăng kích thước chữ tiêu đề */
+  margin-bottom: 4px;
+}
+
+.info-card-value {
+  font-weight: bold !important;
+  color: #222;
+  font-size: 2rem; /* Tăng kích thước chữ giá trị */
+}
